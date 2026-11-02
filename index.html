@@ -80,6 +80,9 @@ button,input,select{font:inherit}
 .book h3 span{background:linear-gradient(90deg,var(--amber),var(--coral) 55%,#B49CFF);-webkit-background-clip:text;background-clip:text;color:transparent}
 .book .pg{font-size:11px;color:rgba(255,255,255,.7);border-top:1px solid rgba(255,255,255,.2);margin-top:16px;padding-top:10px}
 
+.proofs{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.proofs img{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+
 section.band{padding:72px 0;border-top:1px solid var(--line)}
 .kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--violet)}
 .band h2{font-size:clamp(26px,3.4vw,38px);margin:8px 0 14px;max-width:720px}
@@ -270,7 +273,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .mi{flex-wrap:wrap}
   .hero .wrap,.get,.pricing,.co,.classhero{grid-template-columns:1fr}
   .book{margin:32px auto 0;max-width:240px}
-  .curr,.mods{grid-template-columns:1fr}
+  .curr,.mods,.proofs{grid-template-columns:1fr}
   .reader{grid-template-columns:1fr}
   .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);display:flex;overflow-x:auto;gap:6px;padding:12px}
   .side h4,.side .prog{display:none}
@@ -406,9 +409,9 @@ function landing(){
 </div></section>
 
 <section class="band" style="padding-top: 12px; padding-bottom: 32px;"><div class="wrap">
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
-    <img src="assets/gambar1.png" alt="Screenshot Pertumbuhan Subscriber" style="flex: 1 1 320px; max-width: 100%; border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 12px 30px -10px rgba(0,0,0,0.5);">
-    <img src="assets/gambar2.png" alt="Screenshot Penayangan dan Pendapatan" style="flex: 1 1 320px; max-width: 100%; border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 12px 30px -10px rgba(0,0,0,0.5);">
+  <div class="proofs">
+    <img src="assets/gambar1.png" alt="Screenshot Pertumbuhan Subscriber">
+    <img src="assets/gambar2.png" alt="Screenshot Penayangan dan Pendapatan">
   </div>
 </div></section>
 
