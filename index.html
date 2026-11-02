@@ -87,7 +87,7 @@ section.band{padding:72px 0;border-top:1px solid var(--line)}
 .kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--violet)}
 .band h2{font-size:clamp(26px,3.4vw,38px);margin:8px 0 14px;max-width:720px}
 .band p.lede{color:var(--muted);max-width:640px;margin:0 0 32px;font-size:17px}
-.get{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.get{display:grid;grid-template-columns:repeat(3, 1fr);gap:20px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
 .get .card h3{font-size:20px;margin:12px 0 8px}
 .get .card p{color:var(--muted);margin:0 0 14px}
@@ -424,6 +424,8 @@ function landing(){
       <ul class="ticks"><li>10 bab dari syarat YPP sampai banding</li><li>Flowchart proses lengkap 3 bagian</li><li>Template naskah Shorts dan prompt ChatGPT</li><li>Checklist di akhir setiap bab</li></ul></div>
     <div class="card"><span class="tag soon">${L ? 'Sudah dibuka' : 'Dibuka 1 Desember 2026'}</span><h3>Kelas video</h3><p>Video praktik yang mengikuti urutan bab di e-book, di menu Kelas.</p>
       <ul class="ticks"><li>6 materi video praktik + 1 file bonus</li><li>Praktik langsung di YouTube Studio, CapCut, dan AI</li><li>Otomatis terbuka untuk semua pembeli e-book</li></ul></div>
+    <div class="card" style="border-color: var(--coral); background: rgba(255, 77, 94, 0.08);"><span class="tag" style="background: var(--coral); color: #fff;">Bonus Eksklusif</span><h3 style="color: var(--coral);">Grup Diskusi WhatsApp</h3><p>Bergabung dengan komunitas sesama kreator untuk tanya jawab dan saling dukung.</p>
+      <ul class="ticks"><li>Akses grup selamanya</li><li>Tanya jawab & bedah channel</li><li>Networking kreator</li></ul></div>
   </div>
 </div></section>
 
@@ -449,7 +451,7 @@ function landing(){
       <h3>${L ? 'E-book + Kelas Video' : 'Early Bird · E-book + Kelas Video'}</h3>
       <div class="amount num">${rp(price())}</div>
       ${L ? '' : `<div class="was">Harga setelah 1 Des: <s>${rp(PRICE_FULL)}</s><span class="save">Hemat ${rp(PRICE_FULL-PRICE_EARLY)}</span></div>${countHTML()}`}
-      <ul class="ticks"><li>Akses e-book online selamanya</li><li>6 materi kelas video ${L ? '' : '(mulai 1 Desember 2026)'}</li><li>Bonus script prompting Claude AI, langsung bisa dipakai</li><li>Update materi saat kebijakan YouTube berubah</li></ul>
+      <ul class="ticks"><li>Akses e-book online selamanya</li><li>6 materi kelas video ${L ? '' : '(mulai 1 Desember 2026)'}</li><li>Bonus script prompting Claude AI, langsung bisa dipakai</li><li><b style="color: var(--coral);">Grup diskusi WhatsApp eksklusif</b></li><li>Update materi saat kebijakan YouTube berubah</li></ul>
       <!-- CTA dengan class btn-goyang untuk animasi -->
       <a class="btn btn-primary btn-goyang" style="width:100%" href="#beli">Beli sekarang · ${rp(price())}</a>
     </div>
