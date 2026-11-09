@@ -87,13 +87,12 @@ section.band{padding:72px 0;border-top:1px solid var(--line)}
 .kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--violet)}
 .band h2{font-size:clamp(26px,3.4vw,38px);margin:8px 0 14px;max-width:720px}
 .band p.lede{color:var(--muted);max-width:640px;margin:0 0 32px;font-size:17px}
-.get{display:grid;grid-template-columns:repeat(3, 1fr);gap:20px}
+.get{display:grid;grid-template-columns:repeat(2, 1fr);gap:20px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
 .get .card h3{font-size:20px;margin:12px 0 8px}
 .get .card p{color:var(--muted);margin:0 0 14px}
 .tag{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:99px}
 .tag.now{background:rgba(46,196,166,.15);color:var(--teal)}
-.tag.soon{background:rgba(139,109,255,.18);color:#B9A6FF}
 .ticks{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .ticks li{padding-left:28px;position:relative;font-size:15px}
 .ticks li::before{content:"";position:absolute;left:0;top:4px;width:18px;height:18px;border-radius:6px;background:rgba(46,196,166,.18) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232EC4A6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat}
@@ -235,31 +234,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .paper .map{margin:0 0 26px} .paper .map img{width:100%;border-radius:14px;display:block;pointer-events:none}
 .paper .map h3{margin:20px 0 10px}
 
-/* kelas */
+/* kelas (dipertahankan sebagian untuk bonus) */
 .classhero{background:linear-gradient(135deg,#2A1F4E,#1A1730);border:1px solid var(--line);border-radius:22px;padding:32px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;margin-bottom:28px}
 .classhero h1{font-size:32px;margin:10px 0}
 .classhero p{color:var(--muted);margin:0}
-.player{aspect-ratio:16/9;border-radius:18px;background:repeating-linear-gradient(135deg,#1A1730 0 14px,#1E1A38 14px 28px);border:1px solid var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);margin-bottom:24px;padding:20px}
-.player b{display:block;color:var(--text);font-family:var(--display);font-size:20px;margin:10px 0 4px}
-.mods{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.mod{display:flex;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-align:left;color:var(--text);cursor:pointer;width:100%}
-.mod .n{font-family:var(--display);font-weight:800;font-size:22px;color:var(--muted);min-width:36px}
-.mod .t{flex:1;font-weight:700}
-.mod .t small{display:block;color:var(--muted);font-weight:500;font-size:13px}
-.mod .st{font-size:12px;font-weight:700;padding:5px 10px;border-radius:99px;background:rgba(139,109,255,.15);color:#B9A6FF;display:flex;gap:6px;align-items:center;white-space:nowrap}
-.mod.open .st{background:rgba(46,196,166,.15);color:var(--teal)}
-.mod.on{border-color:var(--violet)}
-
-.mlist{display:grid;gap:12px}
-.mi{display:flex;gap:18px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
-.mi>b{font-family:var(--display);font-weight:800;font-size:20px;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--surface2);color:var(--amber);flex:none}
-.mi h4{font-size:17px;margin-bottom:4px}
-.mi p{margin:0;color:var(--muted);font-size:15px}
-.mi>div{flex:1}
-.mi.bonus{border-color:rgba(46,196,166,.45)} .mi.bonus>b{color:var(--teal)}
-.mdesc{margin:-8px 0 26px}
-.mdesc h3{font-size:20px;margin-bottom:6px}
-.mdesc p{color:var(--muted);margin:0 0 4px}
 .howto{margin-bottom:18px}
 .howto ol{margin:8px 0 0;padding-left:20px;color:var(--muted)}
 .prompts{display:grid;gap:14px}
@@ -270,10 +248,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .prn{font-family:var(--display);font-weight:800;color:var(--violet);font-size:20px;min-width:30px}
 .pr pre{white-space:pre-wrap;word-break:break-word;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0 0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;line-height:1.6;color:#DCD8F0}
 @media (max-width:860px){
-  .mi{flex-wrap:wrap}
   .hero .wrap,.get,.pricing,.co,.classhero{grid-template-columns:1fr}
   .book{margin:32px auto 0;max-width:240px}
-  .curr,.mods,.proofs{grid-template-columns:1fr}
+  .curr,.proofs{grid-template-columns:1fr}
   .reader{grid-template-columns:1fr}
   .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);display:flex;overflow-x:auto;gap:6px;padding:12px}
   .side h4,.side .prog{display:none}
@@ -295,8 +272,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .get .card, .pcard{padding:20px}
   .amount{font-size:42px}
   .count b{font-size:20px}
-  .mi{padding:16px 14px;gap:12px}
-  .mi>b{width:36px;height:36px;font-size:18px}
   .classhero{padding:20px;gap:16px}
   .classhero h1{font-size:24px}
   .stage{padding:16px 12px 32px}
@@ -316,15 +291,7 @@ const LAUNCH = Date.parse(C.LAUNCH || '2026-12-01T00:00:00+07:00');
 const PRICE_EARLY = C.PRICE_EARLY || 55000, PRICE_FULL = C.PRICE_FULL || 200000;
 const CONFIG = { CHECKOUT_URL: 'https://lynk.id/rifan.ary/71j4gdlzjxje', BUNNY_LIBRARY: C.BUNNY_LIBRARY || '' };
 const CHAPTERS = [{"n": 1, "title": "Peta Monetisasi YouTube", "partName": "Bagian I · Memahami Aturan Main", "color": "#FF4D5E"}, {"n": 2, "title": "Fondasi Akun & Channel yang Sehat", "partName": "Bagian I · Memahami Aturan Main", "color": "#FF4D5E"}, {"n": 3, "title": "Memilih Niche: Musik Suasana + Fakta Unik", "partName": "Bagian II · Merancang Konten", "color": "#8B6DFF"}, {"n": 4, "title": "Sumber Musik yang Aman Dimonetisasi", "partName": "Bagian II · Merancang Konten", "color": "#8B6DFF"}, {"n": 5, "title": "Memproduksi Video Musik 1 Jam", "partName": "Bagian III · Produksi & Publikasi", "color": "#2EC4A6"}, {"n": 6, "title": "Kemasan yang Mengundang Klik", "partName": "Bagian III · Produksi & Publikasi", "color": "#2EC4A6"}, {"n": 7, "title": "Shorts Fakta Unik sebagai Mesin Subscriber", "partName": "Bagian III · Produksi & Publikasi", "color": "#2EC4A6"}, {"n": 8, "title": "Ritme Upload & Membaca Analytics", "partName": "Bagian III · Produksi & Publikasi", "color": "#2EC4A6"}, {"n": 9, "title": "Jebakan yang Menggagalkan Monetisasi", "partName": "Bagian IV · Lolos & Bertahan", "color": "#FFB547"}, {"n": 10, "title": "Mengajukan YPP & Langkah Setelahnya", "partName": "Bagian IV · Lolos & Bertahan", "color": "#FFB547"}];
-const MODULES = [
-  {n:1, title:'Monetisasi Channel YouTube dari Awal hingga Menghasilkan', desc:'Syarat YPP terbaru, fondasi akun, niche musik suasana, sampai alur produksi harian.', bab:'Bab 1–5, 8', video:''},
-  {n:2, title:'Menyelesaikan Klaim Hak Cipta & Mengganti Musik di YouTube Studio', desc:'Membaca tab Hak cipta, lalu memangkas, membisukan, atau mengganti lagu yang diklaim dengan musik Audio Library.', bab:'Bab 4', video:''},
-  {n:3, title:'Contoh & Panduan Membuat Video Banding (Appeal) Monetisasi', desc:'Struktur video banding yang jujur: perkenalan, alasan penolakan, bukti proses kreatif, dan komitmen.', bab:'Bab 10', video:''},
-  {n:4, title:'Memanfaatkan AI untuk Konten Faceless', desc:'Membuat konten tanpa tampil wajah dengan AI sebagai alat bantu, plus cara agar tidak dinilai sebagai konten tidak autentik.', bab:'Bab 4, 7, 9', video:''},
-  {n:5, title:'Studi Kasus: Channel yang Lolos dan yang Terkena Demonetisasi', desc:'Pengalaman nyata dari channel musik, konten AI viral, dan banding yang ditolak, beserta pelajarannya.', bab:'Bab 9', video:''},
-  {n:6, title:'Membuat YouTube Shorts yang Berpotensi Menghasilkan', desc:'Riset fakta, naskah Hook-Isi-Penutup, voiceover, dan editing cepat yang memenuhi syarat monetisasi.', bab:'Bab 7', video:''},
-  {n:7, title:'Bonus: Script Prompting Claude AI (Versi Gratis)', desc:'Kumpulan prompt siap pakai untuk ide, naskah, dan konsep video Shorts. Sudah bisa dibuka sekarang di menu Bonus.', bab:'Menu Bonus', video:'', bonus:true}
-];
+
 const configured = /^https:\/\/.+\.supabase\.co/.test(C.SUPABASE_URL || '') && C.SUPABASE_ANON_KEY && !/TEMPEL/.test(C.SUPABASE_ANON_KEY);
 const sb = configured ? window.supabase.createClient(C.SUPABASE_URL, C.SUPABASE_ANON_KEY) : null;
 
@@ -335,24 +302,22 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':
 const buyHref = () => CONFIG.CHECKOUT_URL || '#beli';
 
 /* state: login dari Supabase; posisi baca disimpan di browser */
-let mem = {user:null, chapter:0, module:0};
-let data = {loaded:false, buyer:false, chapters:[], prompts:[], videos:{}};
-try { const s = JSON.parse(localStorage.getItem('dnkm-pos')||'null'); if (s) { mem.chapter = s.chapter||0; mem.module = s.module||0; } } catch(e){}
-function save(){ try{ localStorage.setItem('dnkm-pos', JSON.stringify({chapter:mem.chapter, module:mem.module})); }catch(e){} }
+let mem = {user:null, chapter:0};
+let data = {loaded:false, buyer:false, chapters:[], prompts:[]};
+try { const s = JSON.parse(localStorage.getItem('dnkm-pos')||'null'); if (s) { mem.chapter = s.chapter||0; } } catch(e){}
+function save(){ try{ localStorage.setItem('dnkm-pos', JSON.stringify({chapter:mem.chapter})); }catch(e){} }
 
 async function loadData(){
-  data = {loaded:false, buyer:false, chapters:[], prompts:[], videos:{}};
+  data = {loaded:false, buyer:false, chapters:[], prompts:[]};
   if (!sb || !mem.user) return;
-  const [p, c, v] = await Promise.all([
+  const [p, c] = await Promise.all([
     sb.from('purchases').select('email').limit(1),
-    sb.from('content').select('slug,kind,sort,title,short,body').order('sort'),
-    sb.from('videos').select('module,video_id')
+    sb.from('content').select('slug,kind,sort,title,short,body').order('sort')
   ]);
   data.buyer = !!(p.data && p.data.length);
   data.chapters = (c.data||[]).filter(r => r.kind === 'chapter');
   const b = (c.data||[]).find(r => r.kind === 'bonus');
   try { data.prompts = b ? JSON.parse(b.body) : []; } catch(e){ data.prompts = []; }
-  (v.data||[]).forEach(r => data.videos[r.module] = r.video_id);
   data.loaded = true;
 }
 
@@ -360,12 +325,12 @@ function left(){
   const d = Math.max(0, LAUNCH - Date.now());
   return {d:Math.floor(d/864e5), h:Math.floor(d/36e5)%24, m:Math.floor(d/6e4)%60, s:Math.floor(d/1e3)%60};
 }
-const countHTML = () => { const t = left(); return `<div class="count" aria-label="Hitung mundur ke peluncuran kelas">
+const countHTML = () => { const t = left(); return `<div class="count" aria-label="Hitung mundur">
   <div><b class="cd-d">${t.d}</b><span>Hari</span></div><div><b class="cd-h">${t.h}</b><span>Jam</span></div>
   <div><b class="cd-m">${t.m}</b><span>Menit</span></div><div><b class="cd-s">${t.s}</b><span>Detik</span></div></div>`; };
 setInterval(() => { const t = left(); for (const k of 'dhms') document.querySelectorAll('.cd-'+k).forEach(e => e.textContent = t[k]); }, 1000);
 
-const ROUTES = ['beranda','beli','masuk','ebook','kelas','bonus'];
+const ROUTES = ['beranda','beli','masuk','ebook','bonus'];
 function route(){ const r = location.hash.slice(1); return ROUTES.includes(r) ? r : 'beranda'; }
 function go(r){ if (location.hash.slice(1) === r) render(); else location.hash = r; }
 window.addEventListener('hashchange', render);
@@ -385,9 +350,9 @@ function renderAcct(){
 function render(){
   renderAcct();
   const r = route(), app = document.getElementById('app');
-  app.innerHTML = ({beranda:landing, beli:checkout, masuk:login, ebook:ebook, kelas:kelas, bonus:bonus})[r]();
+  app.innerHTML = ({beranda:landing, beli:checkout, masuk:login, ebook:ebook, bonus:bonus})[r]();
   window.scrollTo(0,0);
-  if (r==='masuk') bindLogin(); if (r==='ebook') bindReader(); if (r==='kelas') bindKelas(); if (r==='bonus') bindBonus();
+  if (r==='masuk') bindLogin(); if (r==='ebook') bindReader(); if (r==='bonus') bindBonus();
   document.querySelectorAll('a[href="#beli"]').forEach(a => { if (CONFIG.CHECKOUT_URL) { a.href = CONFIG.CHECKOUT_URL; a.target = '_blank'; } });
 }
 
@@ -397,11 +362,11 @@ function landing(){
   return `
 <section class="hero"><div class="wrap">
   <div>
-    <span class="eyebrow">${L ? 'Kelas video sudah dibuka' : 'Pre-order · Harga early bird sampai 30 Nov'}</span>
+    <span class="eyebrow">${L ? 'E-book sudah dirilis' : 'Pre-order · Harga early bird sampai 30 Nov'}</span>
     <h1>Dari Nol ke <span>Monetisasi</span> YouTube</h1>
     <p class="sub">Panduan langkah demi langkah membangun channel musik dan Shorts fakta unik yang lolos Program Partner YouTube, tanpa lagu curian, subscriber palsu, atau trik sebelum review.</p>
     <div class="ctas">
-      <a class="btn btn-primary" href="#beli">${L ? 'Beli E-book + Kelas' : 'Ambil Harga Early Bird'}</a>
+      <a class="btn btn-primary" href="#beli">${L ? 'Beli E-book' : 'Ambil Harga Early Bird'}</a>
       <span class="price-inline">${L ? `<b>${rp(PRICE_FULL)}</b>` : `<s>${rp(PRICE_FULL)}</s> <b>${rp(PRICE_EARLY)}</b>`}</span>
     </div>
   </div>
@@ -417,23 +382,14 @@ function landing(){
 
 <section class="band"><div class="wrap">
   <div class="kicker">Yang kamu dapat</div>
-  <h2>Satu kali bayar, dua akses: e-book sekarang, kelas video menyusul</h2>
-  <p class="lede">Semua dibaca dan ditonton langsung di web ini dengan akun pembelianmu.</p>
+  <h2>Satu kali bayar, akses selamanya</h2>
+  <p class="lede">Semua dibaca langsung di web ini dengan akun pembelianmu.</p>
   <div class="get">
     <div class="card"><span class="tag now">Akses langsung</span><h3>E-book online</h3><p>Dibaca di menu E-book, dari HP atau laptop. Tidak bisa diunduh.</p>
       <ul class="ticks"><li>10 bab dari syarat YPP sampai banding</li><li>Flowchart proses lengkap 3 bagian</li><li>Template naskah Shorts dan prompt ChatGPT</li><li>Checklist di akhir setiap bab</li></ul></div>
-    <div class="card"><span class="tag soon">${L ? 'Sudah dibuka' : 'Dibuka 1 Desember 2026'}</span><h3>Kelas video</h3><p>Video praktik yang mengikuti urutan bab di e-book, di menu Kelas.</p>
-      <ul class="ticks"><li>6 materi video praktik + 1 file bonus</li><li>Praktik langsung di YouTube Studio, CapCut, dan AI</li><li>Otomatis terbuka untuk semua pembeli e-book</li></ul></div>
     <div class="card" style="border-color: var(--coral); background: rgba(255, 77, 94, 0.08);"><span class="tag" style="background: var(--coral); color: #fff;">Bonus Eksklusif</span><h3 style="color: var(--coral);">Grup Diskusi WhatsApp</h3><p>Bergabung dengan komunitas sesama kreator untuk tanya jawab dan saling dukung.</p>
       <ul class="ticks"><li>Akses grup selamanya</li><li>Tanya jawab & bedah channel</li><li>Networking kreator</li></ul></div>
   </div>
-</div></section>
-
-<section class="band"><div class="wrap">
-  <div class="kicker">Materi yang akan dipelajari</div>
-  <h2>7 materi kelas video</h2>
-  <p class="lede">Setiap materi terhubung ke bab e-book, jadi kamu bisa membaca dulu lalu menonton praktiknya.</p>
-  <div class="mlist">${MODULES.map(m=>`<div class="mi ${m.bonus?'bonus':''}"><b>${m.bonus?'+':m.n}</b><div><h4>${esc(m.title)}</h4><p>${esc(m.desc)}</p></div>${m.bonus?'<span class="tag now">Bisa diakses sekarang</span>':''}</div>`).join('')}</div>
 </div></section>
 
 <section class="band"><div class="wrap">
@@ -445,20 +401,19 @@ function landing(){
 
 <section class="band" id="harga"><div class="wrap">
   <div class="kicker">Harga</div>
-  <h2>${L ? 'Paket e-book + kelas video' : 'Kunci harga early bird sebelum kelas rilis'}</h2>
+  <h2>${L ? 'Paket E-book' : 'Kunci harga early bird'}</h2>
   <div class="pricing">
     <div class="pcard main">
-      <h3>${L ? 'E-book + Kelas Video' : 'Early Bird · E-book + Kelas Video'}</h3>
+      <h3>${L ? 'E-book Panduan' : 'Early Bird · E-book Panduan'}</h3>
       <div class="amount num">${rp(price())}</div>
-      ${L ? '' : `<div class="was">Harga setelah 1 Des: <s>${rp(PRICE_FULL)}</s><span class="save">Hemat ${rp(PRICE_FULL-PRICE_EARLY)}</span></div>${countHTML()}`}
-      <ul class="ticks"><li>Akses e-book online selamanya</li><li>6 materi kelas video ${L ? '' : '(mulai 1 Desember 2026)'}</li><li>Bonus script prompting Claude AI, langsung bisa dipakai</li><li><b style="color: var(--coral);">Grup diskusi WhatsApp eksklusif</b></li><li>Update materi saat kebijakan YouTube berubah</li></ul>
-      <!-- CTA dengan class btn-goyang untuk animasi -->
+      ${L ? '' : `<div class="was">Harga normal: <s>${rp(PRICE_FULL)}</s><span class="save">Hemat ${rp(PRICE_FULL-PRICE_EARLY)}</span></div>${countHTML()}`}
+      <ul class="ticks"><li>Akses e-book online selamanya</li><li>Bonus script prompting Claude AI, langsung bisa dipakai</li><li><b style="color: var(--coral);">Grup diskusi WhatsApp eksklusif</b></li><li>Update materi saat kebijakan YouTube berubah</li></ul>
       <a class="btn btn-primary btn-goyang" style="width:100%" href="#beli">Beli sekarang · ${rp(price())}</a>
     </div>
     <div class="pcard later">
-      <h3>${L ? 'Sebelumnya' : 'Mulai 1 Desember 2026'}</h3>
+      <h3>${L ? 'Sebelumnya' : 'Harga Normal'}</h3>
       <div class="amount num">${L ? rp(PRICE_EARLY) : rp(PRICE_FULL)}</div>
-      <p class="note" style="margin-top:12px">${L ? 'Harga early bird sudah berakhir pada 30 November 2026.' : 'Harga paket setelah kelas video rilis. Pembeli early bird tidak perlu membayar lagi.'}</p>
+      <p class="note" style="margin-top:12px">${L ? 'Harga early bird sudah berakhir pada 30 November 2026.' : 'Harga setelah masa early bird berakhir.'}</p>
     </div>
   </div>
 </div></section>
@@ -468,17 +423,15 @@ function landing(){
   <h2>Sebelum membeli</h2>
   <div class="faq">
     <details><summary>Apakah e-book bisa diunduh sebagai PDF?</summary><p>Tidak. E-book hanya bisa dibaca di menu E-book setelah masuk dengan akun pembelianmu.</p></details>
-    <details><summary>Saya beli sekarang, apakah harus bayar lagi untuk kelas video?</summary><p>Tidak. Pembeli dengan harga ${rp(PRICE_EARLY)} otomatis mendapat akses kelas video saat dibuka pada 1 Desember 2026.</p></details>
     <details><summary>Apakah materi ini menjamin channel saya dimonetisasi?</summary><p>Tidak ada yang bisa menjamin, karena keputusan ada di tim peninjau YouTube. Buku ini mengajarkan cara membangun channel yang memenuhi syarat dan kebijakan agar peluangmu lolos sebesar mungkin.</p></details>
     <details><summary>Syarat YPP katanya naik tahun depan?</summary><p>Benar. Mulai 1 Februari 2027, pendaftar baru membutuhkan 8.000 jam tayang atau 20 juta views Shorts, dengan tetap 1.000 subscriber. Materi sudah memperhitungkan perubahan ini.</p></details>
     <details><summary>Apakah ada trik mengganti musik sebelum review supaya cepat lolos?</summary><p>Tidak. Materi ini sengaja tidak mengajarkan trik yang membuat peninjau YouTube salah menilai channel, karena berisiko penolakan atau demonetisasi di kemudian hari. Yang diajarkan adalah cara menyelesaikan klaim hak cipta dengan fitur resmi YouTube Studio.</p></details>
     <details><summary>Apa isi bonus prompt Claude AI?</summary><p>Kumpulan prompt siap salin untuk mencari ide, menulis naskah, membuat konsep visual, dan memeriksa naskah Shorts. Bisa dipakai di Claude versi gratis dan langsung bisa dibuka setelah membeli.</p></details>
-    <details><summary>Bisa dibaca di HP?</summary><p>Bisa. Tampilan e-book dan kelas menyesuaikan layar HP dan laptop.</p></details>
+    <details><summary>Bisa dibaca di HP?</summary><p>Bisa. Tampilan e-book menyesuaikan layar HP dan laptop.</p></details>
   </div>
 </div></section>
 <footer><div class="wrap"><span>© 2026 Dari Nol ke Monetisasi YouTube</span><span>Sudah membeli? <a href="#masuk">Masuk ke akun</a></span></div></footer>`;
 }
-
 
 /* ---------- halaman beli (jika CHECKOUT_URL belum diisi) ---------- */
 function checkout(){
@@ -490,7 +443,7 @@ function checkout(){
 let pendingEmail = '';
 function login(){
   if (!sb) return `<div class="gate"><h2>Login belum aktif</h2><p>Pemilik situs: isi <code>SUPABASE_URL</code> dan <code>SUPABASE_ANON_KEY</code> di <code>config.js</code>.</p></div>`;
-  if (mem.user) return `<div class="gate"><div class="lockbig">${checkSvg()}</div><h2>Kamu sudah masuk</h2><p>${esc(mem.user.email)}</p><div style="display:flex;gap:10px;justify-content:center;margin-top:18px"><a class="btn btn-primary" href="#ebook">Baca E-book</a><a class="btn btn-ghost" href="#kelas">Kelas</a></div></div>`;
+  if (mem.user) return `<div class="gate"><div class="lockbig">${checkSvg()}</div><h2>Kamu sudah masuk</h2><p>${esc(mem.user.email)}</p><div style="display:flex;gap:10px;justify-content:center;margin-top:18px"><a class="btn btn-primary" href="#ebook">Baca E-book</a><a class="btn btn-ghost" href="#bonus">Bonus</a></div></div>`;
   return `<div class="gate"><div class="lockbig">${lockSvg(28)}</div><h2>Masuk ke akun</h2>
   <p>Pakai email yang sama dengan saat membayar di Mayar. Kami kirim tautan atau kode masuk ke email itu.</p>
   <form class="card" id="liForm" style="text-align:left;margin-top:18px" novalidate>
@@ -546,7 +499,7 @@ function gate(what){
   if (mem.user && !data.buyer) return `<div class="gate"><div class="lockbig">${lockSvg(28)}</div><h2>Pembelian belum ditemukan</h2>
     <p>Akun ${esc(mem.user.email)} belum tercatat sebagai pembeli. Jika baru membayar, tunggu 1–2 menit lalu muat ulang halaman.${C.SUPPORT_WA?` Masih belum bisa? Hubungi WhatsApp ${esc(C.SUPPORT_WA)}.`:''}</p></div>`;
   return `<div class="gate"><div class="lockbig">${lockSvg(28)}</div><h2>${what} khusus pembeli</h2>
-  <p>Beli sekali untuk membuka e-book online sekarang dan kelas video mulai 1 Desember 2026.</p>
+  <p>Beli sekali untuk membuka e-book online dan bonus selamanya.</p>
   <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap"><a class="btn btn-primary" href="${buyHref()}" target="_blank">Beli ${rp(price())}</a><a class="btn btn-ghost" href="#masuk">Sudah beli? Masuk</a></div></div>`;
 }
 const allowed = () => mem.user && data.loaded && data.buyer;
@@ -583,30 +536,6 @@ function bindReader(){
 }
 document.addEventListener('keydown', e => { if ((e.ctrlKey||e.metaKey) && ['s','p'].includes(e.key.toLowerCase()) && route()==='ebook') e.preventDefault(); });
 
-/* ---------- kelas ---------- */
-function kelas(){
-  if (!allowed()) return gate('Kelas video');
-  const L = isLaunched(), mods = MODULES, m = mods[Math.min(mem.module, mods.length-1)];
-  const vid = data.videos[m.n];
-  const embed = (vid && CONFIG.BUNNY_LIBRARY)
-    ? `<iframe src="https://iframe.mediadelivery.net/embed/${encodeURIComponent(CONFIG.BUNNY_LIBRARY)}/${encodeURIComponent(vid)}?autoplay=false&preload=false" style="width:100%;height:100%;border:0;border-radius:18px" allow="encrypted-media;picture-in-picture;fullscreen" allowfullscreen title="${esc(m.title)}"></iframe>` : '';
-  return `<div class="wrap" style="padding-top:32px;padding-bottom:64px">
-  <div class="classhero"><div><span class="tag ${L?'now':'soon'}">${L?'Kelas sudah dibuka':'Segera hadir'}</span>
-    <h1>Kelas Video: Dari Nol ke Monetisasi</h1>
-    <p>${L?'Tonton materi berurutan, lalu kerjakan checklist di bab e-book yang sama.':'Semua materi terbuka otomatis pada 1 Desember 2026 pukul 00.00 WIB. Sambil menunggu, selesaikan Bab 1–4 di e-book.'}</p></div>
-    <div>${L?'':countHTML()}</div></div>
-  <div class="player" style="${embed?'padding:0':''}">${m.bonus
-    ? `<div><b>${esc(m.title)}</b><span>File bonus ini sudah terbuka. <a href="#bonus">Buka menu Bonus</a></span></div>`
-    : embed ? embed : L
-    ? `<div><b>Materi ${m.n} · ${esc(m.title)}</b><span>Video sedang disiapkan.</span></div>`
-    : `<div>${lockSvg(34)}<b>Terkunci sampai 1 Desember 2026</b><span>Materi ${m.n} · ${esc(m.title)}</span></div>`}</div>
-  <div class="mdesc"><h3>${esc(m.title)}</h3><p>${esc(m.desc)}</p><span class="note">Bacaan pendamping: ${esc(m.bab)}</span></div>
-  <h3 style="margin:0 0 14px">Daftar materi</h3>
-  <div class="mods">${mods.map((x,k)=>`<button class="mod ${(L||x.bonus)?'open':''} ${x===m?'on':''}" data-m="${k}"><span class="n">${x.bonus?'+':String(x.n).padStart(2,'0')}</span><span class="t">${esc(x.title)}<small>${esc(x.bab)}</small></span><span class="st">${x.bonus?'Terbuka':L?'Tonton':lockSvg(12)+' 1 Des'}</span></button>`).join('')}</div>
-  </div>`;
-}
-function bindKelas(){ document.querySelectorAll('.mod').forEach(b => b.onclick = () => { mem.module = +b.dataset.m; save(); render(); }); }
-
 /* ---------- bonus ---------- */
 function bonus(){
   if (!allowed()) return gate('Bonus');
@@ -640,7 +569,7 @@ async function onSession(session, ev){
   if (fromLink) history.replaceState(null, '', location.pathname);
   if (mem.user) { pendingEmail = ''; render(); await loadData();
     if (route()==='masuk' || (ev==='SIGNED_IN' && fromLink)) { go('ebook'); return; } }
-  else data = {loaded:false, buyer:false, chapters:[], prompts:[], videos:{}};
+  else data = {loaded:false, buyer:false, chapters:[], prompts:[]};
   render();
 }
 if (sb) {
